@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Example Website 8 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="8style.css"> 
+	<link rel="stylesheet" type="text/css" href="8style2.css"> 
+	<!-- Social links icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="heroImage">
+		<div class="herotext">
+			<h1> ABOUT US </h1>
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="menuContainer">
+			<div class="title">
+				<a class="logo" href=""><img src="images/logo.png" alt="8style logo" width="180px" height="80px"></a>
+			</div> 
+		
+			<div class="navigation">
+				<ul class="mainNav">
+					<li><a href="index.html"> Home </a></li>
+					<li><a class="active" href="about.html"> About </a></li>
+					<li><a href="works.html"> Works </a></li>
+					<li><a href="contact.html"> Contact </a></li>
+				</ul>
+				<ul class="socialLinks">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-google"></a></li>
+				</ul>
+				<ul class="secondMenu">
+					<li><a href="javascript:void(0)" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a></li> 
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="nav2" class="overlayMenu">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-content">
+    			<a href="index.html">Home</a>
+    			<a href="about.html"> About </a>
+    			<a href="works.html"> Works</a>
+    			<a href="contact.html">Contact</a>
+  		</div>
+	</div>
+
+	<div class="mainContent">
+		<div class="contentA">
+			<h3 style="text-align: center; font-size: 45px;"> HISTORY </h3>
+			<div class="row">
+                         	<div id="image-placeholder" class="column"><img src="images/founder.png" alt="image of founder" width="200px"></div>
+                         	<div id="founder-text" class="column">
+                         			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum. </p>
+                            			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                            deserunt mollit anim id est laborum. </p>
+                         	</div>
+
+                         </div>   
+
+                         <h3 style="text-align: center; font-size: 45px;"> WHAT WE DO </h3>
+                         <div class="row">
+                         	<div class="column3">
+                         		<ul>
+						<li><span id="wwd-icon"><img src="images/strategy-icon.png" alt="strategy icon" width="150px"></span></li>
+                         			<li><h4>Strategy</h4></li>
+                         			<li>Brand Strategy</li>
+                         			<li>Digital Strategy</li>
+                         			<li>User Experience</li>
+                         			<li>Research & Analysis</li>
+                         			<li>Content Strategy</li>
+                         			<li>Social Media Strategy</li>
+                         		</ul>
+                         	</div>
+                      		<div class="column3">
+                         		<ul>
+                         			<li><span id="wwd-icon"><img src="images/design-icon.png" alt="design icon" width="150px"></span></li>
+                         			<li><h4>Design</h4></li>
+                         			<li>Brand Identity & Development</li>
+                         			<li>Web Design</li>
+                         			<li>Interface Design</li>
+                         			<li>Data Visualisation</li>
+                         			<li>Animation & Film</li>              
+                         		</ul>                            	
+                        	</div>
+                         	<div class="column3">
+                         		<ul>
+                         			<li><span id="wwd-icon"><img src="images/dev-icon.png" alt="development icon" width="150px"></span></li>
+                          			<li><h4>Development</h4></li>
+                         			<li>Prototyping</li>
+                         			<li>Web Development</li>
+                         			<li>VR/AR Development</li>
+                         			<li>Application Development</li>
+                         			<li>Mobile Development</li>
+                         			<li>User Testing</li>
+                         		</ul>                         	
+                         	</div>
+                         </div>                           
+		</div>
+	</div>
+
+	<div class="footer"><span> Copyright &copy; Mohammed Samad </span></div>
+
+	<script>
+	function openNav() {
+		document.getElementById("nav2").style.width = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("nav2").style.width = "0";
+	}
+	</script>
+</body>
+</html>

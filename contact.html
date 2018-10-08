@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Example Website 8 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="8style.css"> 
+	<link rel="stylesheet" type="text/css" href="8style2.css"> 
+	<!-- Social links icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="heroImage">
+		<div class="herotext">
+			<h1> CONTACT </h1>
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="menuContainer">
+			<div class="title">
+				<a class="logo" href=""><img src="images/logo.png" alt="8style logo" width="180px" height="80px"></a>
+			</div> 
+		
+			<div class="navigation">
+				<ul class="mainNav">
+					<li><a href="index.html"> Home </a></li>
+					<li><a href="about.html"> About </a></li>
+					<li><a href="works.html"> Works </a></li>
+					<li><a class="active" href="contact.html"> Contact </a></li>
+				</ul>
+				<ul class="socialLinks">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-google"></a></li>
+				</ul>
+				<ul class="secondMenu">
+					<li><a href="javascript:void(0)" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a></li> 
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="nav2" class="overlayMenu">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-content">
+    			<a href="index.html">Home</a>
+    			<a href="about.html"> About </a>
+    			<a href="works.html"> Works</a>
+    			<a href="contact.html">Contact</a>
+  		</div>
+	</div>
+
+	<div class="mainContent">
+		<div class="contentA">
+			<h3 style="text-align: center; font-size: 45px;"> WHERE WE ARE </h3>
+			<div class="row">
+				<div id="locationText" class="column">
+					<p> Fail House <br> 121 Random Street <br> London <br> E3 4ER <br> Telephone: 020 65512 9044</p>
+				</div>
+				<div id="locationMap" class="column">
+					<div id="map"><img src="images/map.png" alt="Map" width="600px" height="250px"></div>
+				</div>
+			</div>  
+
+			<div class="forum">
+				<div class="row">
+					<div id="labels" class="column"><p> Name </p></div>
+					<div id="inputs" class="column"><input type="text" name="Name" value=""></div>
+				</div>	
+				<div class="row">
+					<div id="labels" class="column"><p> Email </p></div>
+					<div id="inputs" class="column"><input type="text" name="Email" value=""></div>
+				</div>	
+				<div class="row">
+					<div id="labels" class="column"><p> Message </p></div>
+					<div id="inputs" class="column"><textarea rows="3" cols="35"></textarea></div>
+				</div>
+				<div class="row">
+					<div id="inputs" class="column" style="width:100%; margin-top: 35px;"><input type="submit" value="Submit"></div>
+				</div>
+
+					
+					
+			</div>                       
+		</div>
+
+			<!---<div class="row">
+				<div class="column"></div>
+			</div>	-->
+	</div>
+
+	<div class="footer"><span> Copyright &copy; Mohammed Samad </span></div>
+
+	<script>
+	function openNav() {
+		document.getElementById("nav2").style.width = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("nav2").style.width = "0";
+	}
+	</script>
+</body>
+</html>

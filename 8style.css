@@ -1,0 +1,271 @@
+* {box-sizing:border-box}
+
+html {
+	height: 100%;
+	font-family: "Century Gothic", "Arial";
+}
+
+body {
+	background-color: #e8e8e8;
+	color: white;
+	margin: 0;
+	height: 100%;
+	font-size: 18px;
+}
+
+.header {
+	width: 100%;
+	z-index: 1;
+	height: 90px;
+	top: 0;
+	position: absolute;
+	background-color: rgba(38, 38, 38, 0.49);
+}
+
+.menuContainer {
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+.menuContainer .title {
+	float: left;
+}
+
+.menuContainer .navigation {
+	float: right;
+	padding: 10px 0;
+}
+
+.menuContainer .socialLinks {
+	float: right;
+}
+
+.menuContainer .mainNav {
+	float: left;
+}
+
+.menuContainer  a {
+	text-decoration: none;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+.menuContainer  a:hover {
+	color: red;
+}
+
+.menuContainer  .active {
+	color: red;
+}
+
+.menuContainer  ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.menuContainer  li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.secondMenu {
+	display: none;
+}
+
+.overlayMenu {
+	width: 0;
+	height: 100%;
+	position: fixed; /* Stay in place */
+    	z-index: 2; /* Stay on top */
+    	top: 0; /* Stay at the top */
+    	right: 0;
+    	background-color: #111; /* Black*/
+    	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+}
+
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlayMenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block; /* Display block instead of inline */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlayMenu a:hover, .overlay a:focus {
+    color: red;
+}
+
+/* Position the close button (top right corner) */
+.overlayMenu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* Hero Image */
+.heroImage {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/office.png");
+	height: 50%;
+	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	position: relative;
+    	top: 0;
+    	z-index: 0;
+}
+
+.herotext {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+/**************/
+
+
+/*************** Main Content *********************/
+.sectionA {
+	width: 100%;
+	height: 500px;
+	background-color: #7f1111;
+}
+
+.sectionB {
+	width: 100%;
+	height: 200px;
+}
+
+.sectionB h2 {
+	text-align: center;
+	line-height: 140px;
+	font-size: 60px;
+	color: #00abd6;
+}
+.sectionC {
+	width: 100%;
+	height: 500px;
+	background-color: #B2002C;
+}
+
+.column { 
+    	float: left;
+    	width: 50%;
+}
+
+.column3 { 
+    	float: left;
+    	width: 33.33%;
+}
+
+.sectionA .column {
+    	padding: 10px;
+}
+
+.sectionA .row {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.row:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+}
+
+.sectionA .column p {
+	margin-top: 15%;
+	font-size: 30px;
+}
+
+.sectionA .btn {
+    border: 2px solid white;
+    background-color: inherit;
+    padding: 15px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+}
+
+.sectionA .btn:hover {
+	background-color: rgb(255, 165, 165, 0.49);
+}
+
+/****************************************************/
+
+/*********** Footer **********************************/
+.footer {
+    background-color: #353535;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 2px 0;
+    text-align: center;
+    height: 200px;
+    line-height: 190px;
+}
+
+/*****************************************************/
+/*responsive settings*/
+@media screen and (max-width: 700px) {
+	.navigation .mainNav,.socialLinks {
+		display: none;
+	}
+	.secondMenu {
+		display: block;
+		font-size: 23px;
+		margin: 20% 0;
+	}
+	.column {
+		width: 100%;
+
+	}
+}
+
+
+/*social media links*/
+/*.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}*/
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+
+  color: white;
+}
+
+.fa-twitter {
+
+  color: white;
+}
+
+.fa-google {
+
+  color: white;
+}

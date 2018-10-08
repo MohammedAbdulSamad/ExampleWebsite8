@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Example Website 8 </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="8style.css"> 
+	<link rel="stylesheet" type="text/css" href="8style2.css"> 
+	<!-- Social links icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="heroImage">
+		<div class="herotext">
+			<h1> THE BEST MINDS AT WORK </h1>
+		</div>
+	</div>
+	
+	<div class="header">
+		<div class="menuContainer">
+			<div class="title">
+				<a class="logo" href=""><img src="images/logo.png" alt="8style logo" width="180px" height="80px"></a>
+			</div> 
+		
+			<div class="navigation">
+				<ul class="mainNav">
+					<li><a class="active" href="index.html"> Home </a></li>
+					<li><a href="about.html"> About </a></li>
+					<li><a href="works.html"> Works </a></li>
+					<li><a href="contact.html"> Contact </a></li>
+				</ul>
+				<ul class="socialLinks">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-google"></a></li>
+				</ul>
+				<ul class="secondMenu">
+					<li><a href="javascript:void(0)" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a></li> 
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="nav2" class="overlayMenu">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-content">
+    			<a href="index.html">Home</a>
+    			<a href="about.html"> About </a>
+    			<a href="works.html"> Works</a>
+    			<a href="contact.html">Contact</a>
+  		</div>
+	</div>
+
+	<div class="mainContent">
+		<div class="sectionA">
+			<div class="row">
+				<div class="column">
+					<p style="font-size: 45px;"> We love to bring new ideas to life. </p>
+					<span><button class="btn"> Find out more </button></span>
+				</div>
+				<div class="column">
+					<p> As your marketing and business partner, we aim to deliver the best for you and your company. </p>
+					<p style="color: #ff4e14; font-size: 40px;"> Success is waiting. </p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sectionB">
+			<h2> Going Strong Since 2002 </h2>
+		</div>
+	</div>
+
+	<div class="footer"><span> Copyright &copy; Mohammed Samad </span></div>
+
+	<script>
+	function openNav() {
+		document.getElementById("nav2").style.width = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("nav2").style.width = "0";
+	}
+	</script>
+</body>
+</html>
