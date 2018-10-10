@@ -143,13 +143,13 @@ body {
 /*************** Main Content *********************/
 .sectionA {
 	width: 100%;
-	height: 500px;
+	min-height: 500px;
 	background-color: #7f1111;
 }
 
 .sectionB {
 	width: 100%;
-	height: 200px;
+	min-height: 200px;
 }
 
 .sectionB h2 {
