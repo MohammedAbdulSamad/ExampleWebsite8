@@ -53,8 +53,7 @@
 
 
 #locationText {
-	line-height: 40px;
-	width: 45%
+
 }
 
 #locationMap {
@@ -63,22 +62,17 @@
 }
 
 .forum {
-	width: 60%;
-	display: block;
-	height: 500px;
-	margin: 0 auto;
-	margin-top: 60px;
-	
+	width: 100%;
 }
 
 .forum .row {
-	width: 600px;
-	margin: 0 auto;
+	/*width: 600px;
+	margin: 0 auto;*/
 }
 
 .forum .column {
-	height: 50px;
-	width: 50%;
+	/**height: 50px;
+	width: 50%;**/
 	
 }
 #labels {
@@ -90,6 +84,21 @@
 	max-width: 100%;
 	height: 30px;
 	margin-top: 5px;
+}
+
+.contact-row:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+}
+
+.contact-column {
+	float: left;
+	width: 50%;
+}
+
+.cForm {
+	width: 100%;
 }
 
 /*responsive settings*/
